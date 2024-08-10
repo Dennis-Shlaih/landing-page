@@ -24,6 +24,7 @@ header {
 }
 
 .header-top {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +42,7 @@ nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 1.5em;
 }
 
 nav a {
@@ -50,9 +52,7 @@ nav a {
   text-align: center;
 }
 
-nav li {
-  margin-bottom: 1em;
-}
+
 
 .hero {
   text-align: center;
@@ -66,6 +66,7 @@ nav li {
   font-weight: extra-bold;
   margin-bottom: 0.5em;
   color: var(--primary-text-color);
+  font-size: 30px;
 }
 
 .hero p {
@@ -154,7 +155,7 @@ background-color: #92b0da;
 }
 
 #pricing-section {
-  margin: 2em 0;
+  margin: 2em;
 }
 
 
@@ -247,11 +248,11 @@ cite {
 }
 
 .sign-up-container {
-  padding: 3em;
+  padding: 2em 3em;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
 }
@@ -290,4 +291,61 @@ footer {
   justify-content: center;
   align-items: center;
   height: 10%;
+}
+
+@media only screen and (min-width: 780px) {
+  .header-top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .hero {
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .hero h2 {
+   font-size: 48px;
+  }
+  
+
+  .features-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .feature {
+    flex: 1;
+    max-width: 40%;
+    margin: 0 0.5em;
+  }
+
+  .item-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .item {
+    flex: 1;
+    height: 200px;
+  }
+
+  #sign-up-section {
+    text-align: left;
+  }
+
+  .sign-up-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }

@@ -36,6 +36,7 @@ header {
   font-family:  "RocknRoll One", sans-serif;
   color: var(--primary-text-color);
   font-style: italic;
+  font-size: 12px;
 }
 
 nav ul {
@@ -293,11 +294,17 @@ footer {
   height: 10%;
 }
 
+
 @media only screen and (min-width: 780px) {
+
   .header-top {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 2em;
+  }
+
+  .logo {
+    font-size: 24px;
   }
 
   nav ul {
